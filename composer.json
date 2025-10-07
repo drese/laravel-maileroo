@@ -1,0 +1,53 @@
+{
+    "name": "drese/laravel-maileroo",
+    "description": "Laravel integration for Maileroo SDK - seamless mail transport and form submissions",
+    "type": "library",
+    "keywords": ["laravel", "maileroo", "email", "mail", "smtp"],
+    "homepage": "https://github.com/drese/laravel-maileroo",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/drese/laravel-maileroo/issues",
+        "source": "https://github.com/drese/laravel-maileroo"
+    },
+    "authors": [
+        {
+            "name": "Jim Andresen"
+        }
+    ],
+    "require": {
+        "php": "^8.2|^8.3|^8.4",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/mail": "^10.0|^11.0|^12.0",
+        "symfony/mailer": "^6.0|^7.0",
+        "maileroo/maileroo-php-sdk": "^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drese\\LaravelMaileroo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Drese\\LaravelMaileroo\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Drese\\LaravelMaileroo\\MailerooServiceProvider"
+            ],
+            "aliases": {
+                "Maileroo": "Drese\\LaravelMaileroo\\Facades\\Maileroo"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
