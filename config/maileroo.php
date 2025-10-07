@@ -19,7 +19,7 @@ return [
     | The timeout in seconds for API requests to Maileroo.
     |
     */
-    'timeout' => env('MAILEROO_TIMEOUT', 30),
+    'timeout' => (int) env('MAILEROO_TIMEOUT', 30),
 
     /*
     |--------------------------------------------------------------------------
