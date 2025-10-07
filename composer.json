@@ -1,6 +1,6 @@
 {
     "name": "drese/laravel-maileroo",
-    "description": "Laravel integration for Maileroo SDK - seamless mail transport and form submissions",
+    "description": "Laravel wrapper and integration for Maileroo SDK - seamless mail transport and form submissions",
     "type": "library",
     "keywords": ["laravel", "maileroo", "email", "mail", "smtp"],
     "homepage": "https://github.com/drese/laravel-maileroo",

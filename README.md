@@ -17,6 +17,12 @@ A Laravel wrapper package for [Maileroo](https://maileroo.com/?r=drese) (*affili
 - PHP 8.2 or higher
 - Laravel 10.x, 11.x, or 12.x
 
+## Create a Maileroo Account
+
+If you do not already have one, create a [Maileroo Account here](https://maileroo.com/?r=drese) (*affiliate link). Once created, you will need to generate an API key and have it handy when setting up your environment variables.
+
+Maileroo offers a generous free tier to get you going. 
+
 ## Installation
 
 Install the package via Composer:
